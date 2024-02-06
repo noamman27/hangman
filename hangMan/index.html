@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman by Noam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="border" id="page-container">
+        <div class="border" id="top-bar">           
+            <h1 class="header">Hang man</h1>
+        </div>
+        <div class="border" id="main-display"> 
+            <div class="border" id="left-area">
+                 <p></p> 
+                <!-- to lower the button -->
+                <button onclick="init()">New Game</button>
+            </div>  
+            <div class="border" id="center-area">
+                <div id="message-area">
+                </div>
+                <div id="word"></div><br>
+                <p id="status"></p>
+                <div><del class="del" id="wrongGuesses"></del></div><br>
+                <img id="image">
+            </div>        
+        </div>        
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
